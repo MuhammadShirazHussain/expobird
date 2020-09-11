@@ -1,0 +1,109 @@
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .card-seo {
+    width: 250px;
+    max-width: 228px;
+    
+    height: 280px;
+    text-align: center;
+    padding-top: 2rem;
+    box-shadow: 0px 0px 26px 0px rgba(219,215,219,1);
+    border-radius: 4px;
+    background-image: url(https://victoriousseo.com/app/themes/victorious/dist/images/small-chart-bg_c141fc16.png);
+    overflow: hidden;
+    /* background-position: center; */
+    background-size: contain;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: 0px 140px;
+  }
+  #b-seo{
+    margin-right: 1rem;
+    font-weight: bold;
+  }
+  #a-seo{
+    margin-left: 1rem;
+    font-weight: bold;
+  }
+  
+  .car-seo b{
+    transition-timing-function: ease-in-out;
+  }
+.theme-clr{
+  background-color: #2E3192;
+  color: white;
+  
+}
+.container-form{
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+.inp-seo{
+  border: 1px solid lightgrey;
+  margin: 1rem;
+  padding: .5rem;
+  width: 450px;
+}
+.iconSize{
+  width: 36px;
+  height: 30px;
+}
