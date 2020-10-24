@@ -14,11 +14,11 @@ import { BrowserRouter as Router, Switch,Route} from "react-router-dom";
 
 
 
-
 export default class Main extends Component{
 
     render(){
         return(
+
             <Router>
                 <div>
                     <Navbar/>
@@ -55,6 +55,8 @@ export default class Main extends Component{
                     <Footer/>
                 </div>
             </Router>
+
+
         );
     }
 }

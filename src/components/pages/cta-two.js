@@ -5,7 +5,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 import { FiPhoneCall } from "react-icons/fi";
 
 
-export default class CtaOne extends Component{
+export default class Ctatwo extends Component{
     render(){
         return(
             <div> 

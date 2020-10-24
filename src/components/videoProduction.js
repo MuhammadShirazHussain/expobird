@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import banner from '../assets/expobird-banner-image.svg'
-import Video from '../assets/expobird-video.mp4'
 import clients from '../assets/expobird clients.webp'
 import diviCover from '../assets/divi-video-cover.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -8,127 +6,82 @@ import {faPlay} from '@fortawesome/free-solid-svg-icons'
 import greenCircle from '../assets/Green-01.svg'
 import Pentagon from '../assets/pentagon.svg'
 import Customize from '../assets/customize.jpg'
-import Services from '../components/Services-section'
+import VideoProductionPortfolio from '../assets/Video Production Portfolio.png'
+import CorporateVideoProduction from '../assets/corporate-video-production.png'
+import DigitalVideoVommercials from '../assets/digital-video-commercials.png'
+import DocumentaryVideoProduction from '../assets/documentary-video-production.png'
+import Engage from '../assets/engage.png'
+import ProductUnboxing from '../assets/product-unboxing.png'
+import Whyus from '../assets/Why us.png'
 import Testimonials from '../components/testimonials'
 import ContactForm from '../components/ContactFormFooter'
 import AnimatePopup from '../components/animatePopup'
 import Accordion from './ui/Accordion'
-
+import Banner from './pages/banner'
+import ClientSection from './clients'
+import Portfolio from './portfolio'
+import ServiceSection from './Services-section'
+import ServiceSectionTitle from './Services-section-title'
+import CtaFourth from './pages/cta-fourth'
 
 export default class VP extends Component {
     render(){
         return(
             <div>
-                <div className="row bnr">
-                    <img id="banner-img" src={banner} alt=""/>
-                    <div className="heading-text">
-                        <h1 id="heading-main" >Video Production<br/> Service</h1>
-                        <p>Creative Video Production & Video Making Company for Business<br/>and Corporates Share your message directly with your audience<br/> and other stakeholders
-<br/>
-                       
-                        </p>
-                        <button className="rf">
-                            Get Started
-                        </button>
-                    </div>
-                    <div className="main-video">
-                    <video  muted loop autoPlay>
-                        <source src={Video} type="video/mp4"/>
-                        Your browser does not support the video tag.
-                    </video>
-                    </div>
-                </div>
-                <div className="row my-4">
-                    <div className="col-12 text-center">
-                            <h1 className="heading-page">Our Clients</h1>
-                        </div>
-                    <div className="col-1"></div>
-                    <div className="col-10 text-center mt-3">
-                        <img id="clients-img" src={clients} alt=""/>
-                    </div>
-                    <div className="col-1"></div>
-                </div>
-                <div className="row">
-                    <div className="col-6">
-                        
-                    </div>
-                    <div className="col-6">
+                <Banner title1={'Video Production Service'}desc1="Creative Video Production & Video Making Company for Business and Corporates Share your message directly with your audience and other stakeholders"/>
+                <ClientSection/>
+                <Portfolio
+                    image={VideoProductionPortfolio} 
+                    subheading1="Leading Video Marketing Services in Pakistan & With Creative video production Proud"   
+                />
+                <ServiceSectionTitle
+                        title="Video Production Services" SubHeading="Sub Services with additional features of Video Production"
+                        button="See Our Work " 
+                />
+                <ServiceSection 
+                    image1={CorporateVideoProduction}
+                    title1="Corporate Video Production" 
+                    desc1="ExpoBird creates corporate videos that are meant to serve the purpose for its clients. " 
 
-                    </div>
-                </div>
-                <div className="row my-5 pt-6">
-                    <div className="col-3">
+                    image2={DigitalVideoVommercials}
+                    title2="Digital Video Commercials" 
+                    desc2="DVC is the latest marketing hack which is now being used by all big brands. "
+                />
+                <ServiceSection 
+                    image1={ProductUnboxing}
+                    title1="Product Unboxing" 
+                    desc1="Product Unboxing allows you to create videos that give the best demonstration about the product." 
 
-                    </div>
-                    <div className="col-6 text-center">
-                        <div className="play-btn">
-                            <div className="play-btn-inside">
-                                <FontAwesomeIcon icon={faPlay} />
-                            </div>
-                        </div>
-                        <div id="diviCover" className="image-container">
-                            <img id="dC" src={diviCover} alt=""/>
-                        </div>
-                        <div className="circle">
-                            <img src={greenCircle} alt=""/>
-                        </div>
-                        <div className="pentagon">
-                            <img src={Pentagon} alt=""/>
-                        </div>
-                    </div>
-                    <div className="col-3">
+                    image2={DocumentaryVideoProduction}
+                    title2="Documentary Video Production" 
+                    desc2="Now create short documentary videos that educate your audience and other stakeholders."
+                />
+                    <CtaFourth className="cta-image-right"
+                        heading="Engage"
+                        subheading="Tell Powerful Stories and Create mesmerizing Videos With Unique Design Elements"
+                        paragraph="Videos are the best way to discuss your ideas, explain your business goals and share your vision with relevant stakeholders of the company. Today most entrepreneurs look for eye-catching videos that will serve their purpose. This is because they know their audience pays to heed to videos more than any other thing. Such videos can now be created for mobile users as well. Big brands are now focusing more on digital videos that work best for social media and are mobile-friendly. They now know that 90% of the general public are engaged on social media via mobile and tablets."
+                        button="Sign Up"
+                        image={Engage}
+                    />
+                <div className="container">
+                    <div className="row testi-margin justify-content-between ">
 
-                    </div>
-                </div>
-                <div className="row my-5">
-                    <div className="col-3">
-
-                    </div>
-                    <div className="col-6 text-center">
-                        <div>
-                            <h1 className="heading-page">
-                            Branding
-                            </h1>
+                        <div   class="col-xs-12 col-sm-12 col-md-5 col-lg-5 align-self-center">
+                                <img src={Whyus}   width="420px" />
                         </div>
-                        <div>
-                            <h2>
-                            Leading Video Marketing Services in Pakistan & With Creative video production Proud
-                            </h2>
+                        <div  class="heading-page-2 col-xs-12 col-sm-12 col-md-6 col-lg-6 ml-4">
+                                <h1>Why choose us?</h1> 
+                                <p class="margin-bottom8 text-secondary p-style ">
+                                ExpoBird has experts for video production that take care of any video project. But the final touch will be done after your review. Our crew members are flexible, and they can do things on their own, whether it's video making or content in the video. On the ExpoBird website you can check our work. If you are convinced, then schedule a call..`
+                                </p>
+                                <button className="services-cta mt-3 mb-5f">let’s discuss the project</button>          
                         </div>
-                        <div>
-                            <p>Divi is our flagship theme and visual page builder. It's the most widely used premium WordPress theme in the world according to stats from BuiltWith.com. Divi is more than just a theme, it's a website building framework that makes it possible to design beautiful websites without ever touching a single line of code and without installing and configuring dozens of disjointed plugins. We think this is the future of WYSIWYG and it's unlike any WordPress theme you have ever used before.</p>
-                        </div>
-                        <button className="layout-btn">Learn More About ExpoBird</button>
-                    </div>
-                    <div className="col-3">
-
                     </div>
                 </div>
-                <Services/>
-                <div className="row"> 
-                <div className="col-1"></div>
-                <div className="col-5 text-center">
-                    <img src={Customize} alt=""/>
-                </div>
-                <div className="col-5 text-center">
-                    <h1 className="heading-page">
-                    Why Us?
-                    </h1>
-                <h3>
-                We thrive creativity and brilliance in our video production service. .
-                </h3>
-                <p>ExpoBird has experts for video production that take care of any video project. But the final touch will be done after your review. 
-                    Our crew members are flexible, and they can do things on their own, whether it's video making or content in the video. 
-                    On the ExpoBird website, you can check our work. If you are convinced, then schedule a call..</p>
-
-                </div>
-                <div className="col-1">
-
-                </div>
-                </div>
+                
                
                 <Testimonials/>
-                <AnimatePopup/>
+                {/* <AnimatePopup/> */}
 
                 <div className="row my-5 ">
                     <div className="col-12">

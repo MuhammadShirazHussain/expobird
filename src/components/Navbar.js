@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, createRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 import {
@@ -29,14 +29,15 @@ import animation from '../assets/video animation expobird.mp4'
 import digimarket from '../assets/digital marketing expobird.mp4'
 import services5 from '../assets/web development expobird.mp4'
 import sm from '../assets/social media expobird.mp4'
-
+import whatsapp from '../assets/whatsapp-brands.svg'
 
 class Navbars extends Component {
   constructor(props){
     super(props);
-   /*  this.openNav = this.openNav.bind(this); */
+    // this.myFunction = this.myFunction.bind(this);
+    // this.openNav = this.openNav.bind(this);
+    // this.MobCloseNav = this.MobCloseNav.bind(this);
   }
-
 componentDidMount(){
   $(window).scroll(()=>{
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
@@ -78,27 +79,44 @@ componentDidMount(){
   })
 }  
 
-/* openNav(){
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginRight = "250px";
-  $(".main-video").animate({
-    right : "15pc"
-  });
-}
-closeNav(){
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginRight = "0";
-  $(".main-video").animate({
-    right : "5pc"
-  });
-} */
+// openNav(){
+//   document.getElementById("mySidenav").style.width = "250px";
+//   document.getElementById("main").style.marginRight = "250px";
+
+//   var x = window.matchMedia("(max-width: 700px)")
+//   this.myFunction(x); // Call listener function at run time
+//   x.addListener(this.myFunction);
+
+// }
+
+// myFunction(x){
+//   if (x.matches) { // If media query matches
+//   document.getElementById("mySidenav").style.width = "100%";
+//   document.getElementById("mySidenav").style.textAlign = "center";
+//   document.getElementById("main").style.marginRight = "0px";
+
+//   }
+// }
+
+// closeNav(){
+//   document.getElementById("mySidenav").style.width = "0";
+//   document.getElementById("main").style.marginRight= "0";
+  
+// }
+// MobCloseNav(){
+  
+//   if (window.matchMedia("(max-width: 767px)").matches){
+//       document.getElementById("mySidenav").style.width = "0";
+//       document.getElementById("main").style.marginRight= "0";
+//   }
+// }
 
   render(){
 
   return (
     <div>
-      <Navbar className="menu" /* color="light" light */ >
-      <div id="mySidebar" className="sidebar">
+      <Navbar  className="menu" /* color="light" light */ >
+      <div id="mySidebar" className="sidebar"  >
         <a href="#" className="closebtn" onClick={this.closeNav}>×</a>
         <a href="#">About</a>
         <div className="dropdown">
@@ -108,7 +126,7 @@ closeNav(){
         <a href="#">Clients</a>
         <a href="#">Contact</a>
       </div>
-        <NavbarBrand className="ml-5 logo-container" href="/"><img className="" src={expoBirdLogo} id="logo" alt="ExpoBird Logo"/></NavbarBrand>
+        <NavbarBrand className=" logo-container" href="/"><img className="" src={expoBirdLogo} id="logo" alt="ExpoBird Logo"/></NavbarBrand>
           <Nav className="" >
             <NavItem  className="dropdown" tab-index="0">
               <NavLink href="/components/">Services <FontAwesomeIcon icon={faCaretDown} /></NavLink>
@@ -121,7 +139,7 @@ closeNav(){
                           <source src={videoProduction} type="video/mp4"/>
                           Your browser does not support the video tag.
                         </video>
-                        {/* <img width="32px" className="mb-3" src={videoProduction} alt=""/> */}
+                        {/*<img width="32px" className="mb-3" src={oxford} alt=""/>*/ }
                         <div className="ml-3">
                           <p className="dropdown-menu-headings"> Video & Production</p>
                           <p className="dropdown-menu-text">Nothing lasts forever. And so does your Graphics & design.</p>
@@ -266,8 +284,12 @@ closeNav(){
         </div>
         {/* <div id="menu-icon" onClick={this.openNav} className="openbtn">
           <button className="nostyling"> ☰ </button>
-        </div> */}
+        </div>  */}
       </Navbar>
+      <div className="whatsapp-icon"><a href="https://api.whatsapp.com/send?phone=923333375061" 
+                    target="_blank"  rel="noopener noreferrer"><img width="16" height="16" src={whatsapp} 
+                    alt=""/></a>
+        </div>
       
     </div>
   );

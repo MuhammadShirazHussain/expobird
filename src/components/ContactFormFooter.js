@@ -5,7 +5,8 @@ export default class ContactForm extends Component{
 
     render(){
         return(
-            <div className="row my-5">
+            <div className="container">
+            <div className="row testi-margin">
                 <div className="col-6 text-center pt-5">
                     <video className="slight-br videoSize" muted autoPlay>
                         <source src={Cfvideo} type="video/mp4"/>
@@ -44,6 +45,7 @@ export default class ContactForm extends Component{
                         <input type="submit" name="" id="" className="services-cta cf-submit"/>
                     </form>                
                 </div>
+            </div>
             </div>
         );
     }

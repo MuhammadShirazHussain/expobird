@@ -23,46 +23,46 @@ export default class Clients extends Component{
     render(){
 
         return(
-            <div className="row my-4 text-center" >
+            <div className="row testi-margin2 text-center" >
                 <div className="col-12 text-center">
                         <h1 className="heading-page">Our Clients</h1>
                     </div>
-                <div className="col-2 text-center mt-3">
+                <div className="col-lg-2 col-xl-2 col-4 text-center mt-3">
                     <img className="clientImage" id="clients-img" src={oxford} alt=""/>
                 </div>
-                <div className="col-2 text-center mt-3">
+                <div className="col-lg-2 col-xl-2 col-4 text-center mt-3">
                     <img className="clientImage " className="clientImage" id="clients-img" src={fbr} alt=""/>
                 </div> 
-                <div className="col-2 text-center mt-3">
+                <div className="col-lg-2 col-xl-2 col-4 text-center mt-3">
                     <img className="clientImage" id="clients-img" src={diamondHomes} alt=""/>
                 </div> 
-                <div className="col-2 text-center mt-3">
+                <div className="col-lg-2 col-xl-2 col-4 text-center mt-3">
                     <img className="clientImage" id="clients-img" src={memonBuilders} alt=""/>
                 </div> 
-                <div className="col-2 text-center mt-3">
+                <div className="col-lg-2 col-xl-2 col-4 text-center mt-3">
                     <img className="clientImage" id="clients-img" src={customs} alt=""/>
                 </div>   
-                <div className="col-2 text-center mt-3">
+                <div className="col-lg-2 col-xl-2 col-4 text-center mt-3">
                     <img className="clientImage" id="clients-img" src={apimatic} alt=""/>
                 </div>  
 
 
-                <div className="col-2 text-center mt-3">
+                <div className="col-lg-2 col-xl-2 col-4  text-center mt-3">
                     <img className="clientImage" id="clients-img" src={clariant} alt=""/>
                 </div>
-                <div className="col-2 text-center mt-3">
+                <div className="col-lg-2 col-xl-2 col-4 text-center mt-3">
                     <img className="clientImage" id="clients-img" src={hotwav} alt=""/>
                 </div> 
-                <div className="col-2 text-center mt-3">
+                <div className="col-lg-2 col-xl-2 col-4 text-center mt-3">
                     <img className="clientImage" id="clients-img" src={superPower} alt=""/>
                 </div> 
-                <div className="col-2 text-center mt-3">
+                <div className="col-lg-2 col-xl-2 col-4  text-center mt-3">
                     <img className="clientImage" id="clients-img" src={ronin} alt=""/>
                 </div> 
-                <div className="col-2 text-center mt-3">
+                <div className="col-lg-2 col-xl-2 col-4   text-center mt-3">
                     <img className="clientImage" id="clients-img" src={iba} alt=""/>
                 </div>   
-                <div className="col-2 text-center mt-3">
+                <div className="col-lg-2 col-xl-2 col-4 text-center mt-3">
                     <img className="clientImage" id="clients-img" src={mehran} alt=""/>
                 </div>  
                 

@@ -24,23 +24,23 @@ export default class Banner extends Component{
         return(
             <div> 
                 <div className="row bnr">
-                    <img id="banner-img" src={banner} alt=""/>
-                    <div className="heading-text" >
-                        <h1 id="heading-main">{this.props.title1}</h1>
-                        <p>Create endless opportunities for your business in Karachi<br/> 
-and across Pakistan through Digital Marketing with ExpoBird.<br/>
-                        </p>
-                        <button className="rf">
-                            Get Started
-                        </button>
+                    <div className="col-6">
+                            <img id="banner-img" src={banner} alt=""/> 
+                            <div className="heading-text" >
+                                <h1 id="heading-main">{this.props.title1}</h1>
+                                <p>{this.props.desc1}</p>
+                                <button className="rf">
+                                    Get Started
+                                </button>
+                            </div>
                     </div>
                     
 
-                    <div>
+                    <div className="col-5">
                         <ModalVideo 
                         channel='youtube' 
                         isOpen={this.state.isOpen} 
-                        videoId='L61p2uyiMSo' 
+                        videoId='BaS426OQTG0' 
                         onClose={() => this.setState({isOpen: false})} />
 
 

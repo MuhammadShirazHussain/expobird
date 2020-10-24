@@ -13,7 +13,12 @@ import Icon3 from '../../assets/icon3.png'
 import Icon4 from '../../assets/icon4.png'
 import Icon5 from '../../assets/icon5.png'
 import Icon6 from '../../assets/icon6.png'
+import SEOFactor from '../../assets/SEO The X-Factor.png'
+import SEOServicesPortfolio from '../../assets/SEO Services Portfolio.png'
 import ContactForm from '../../components/ContactFormFooter'
+import CtaFourth from '../pages/cta-fourth'
+import Accordion from '../ui/Accordion'
+
 
 const styles111 = {
     backgroundImage : `url(${triple1})`,
@@ -46,9 +51,18 @@ export default class Seo extends Component{
             <div>
                 <Banner/>
                 <ClientSection/>
-                <Portfolio/>
-
-                <div className="row my-5 pt-5">
+                <Portfolio
+                    image={SEOServicesPortfolio} 
+                    subheading1="When word complexity increases, designs come in front, which reflects the outlook of the business. A picture speaks a thousand words when some creativity and artwork is shown in the image. Please have a look our graphics designing work to satisfy yourself and then discuss your project with ExpoBird"   
+                />
+                <CtaFourth className="cta-image-right"
+                    // heading=""
+                    subheading="SEO – The X-FACTOR for YOUR BRAND"
+                    paragraph="When everyone around you is selling the same kind of product and service, when everyone is throwing the same promotions and discounts offers, when everyone is reaching the target audience through the same platform, then what is that one factor that could give you an edge over your rivals in this saturated market? Read More"
+                    image={SEOFactor}
+                    button="Rank Your Website Now"
+                />
+                {/* <div className="row my-5 pt-5">
                     <div className="col-1"></div>
                     <div className="col-5 pr5">
                         <h4 className="fw">Extend-able Styles</h4>
@@ -67,7 +81,7 @@ export default class Seo extends Component{
                         </video>
                     </div>
                     <div className="col-1"></div>
-                </div>
+                </div> */}
                 <div className="row my-5">
                     <div className="col-12 text-center">
                         <h2 className="text-center fw mt-5">SEO AUDIT is MUST !!!</h2>
@@ -77,7 +91,7 @@ export default class Seo extends Component{
                     <div className="col-1"></div>
                     <div className="col-10">
                         <div className="row my-5">
-                            <div className="col-4">
+                            <div className="col-4 mt-3">
                                 <img className="iconSize" src={Icon1} alt=""/>
                                 <h6 className="fw mt-3">TITLE TAGS, META 
                                     <br/>DESCRIPTIONS, PAGE 
@@ -87,33 +101,33 @@ export default class Seo extends Component{
                                     Once you are done with Targeted Keyword Mapping, it is time to put them in the right sequence all over your website that can catch the attention of search engines and targeted users.
                                 </small>
                             </div>
-                            <div className="col-4">
+                            <div className="col-4 mt-3">
                                 <img className="iconSize" src={Icon2} alt=""/>
                                 <h6 className="fw mt-3">URL STRUCTURE</h6>
                                 <small>
                                 Your website’s URLs are another important factor for overall site optimisation. Unlike the vast majority of the websites, your website should have proper links with respect to relevance of content of the page. Doing so, when search engines will crawl the site based on your URLs, they will rank your website higher due to their relevance.                                </small>
                             </div>
-                            <div className="col-4">
+                            <div className="col-4 mt-3">
                                 <img className="iconSize" src={Icon3} alt=""/>
                                 <h6 className="fw mt-3">WEBSITE CONTENT</h6>
                                 <small>
                                 Does your site have unique content? Are you sure that there is no duplicate content on your site? What if your site is already penalised and blacklisted by google search engine? These are some of the areas that you need to look at very precisely in relation to website content.                            
                                 </small>
                             </div>
-                            <div className="col-4">
+                            <div className="col-4 mt-3">
                                 <img className="iconSize" src={Icon4} alt=""/>
                                 <h6 className="fw mt-3">BACKLINKS</h6>
                                 <small>
                                 Backlinks of your websites are instrumental to rank your website at the top of the search engine result page. Higher the domain authority of the sites where backlinks are originated from, higher will be your chances to appear at the top. Backlinks are considered a lifeline for your website’s SEO. The more, the merrier.                                </small>
                             </div>
-                            <div className="col-4">
+                            <div className="col-4 mt-3">
                                 <img className="iconSize" src={Icon5} alt=""/>
                                 <h6 className="fw mt-3">INTERNAL BROKEN LINKS</h6>
                                 <small>
                                 One of the ways search engines rank your website is by crawling your web links. Dead links on your website would mean search engine spiders and algorithms won’t be able to perform their functions on your site. Thus, these links will stop them from crawling your site and indexing it.
                                 </small>
                             </div>
-                            <div className="col-4">
+                            <div className="col-4 mt-3">
                                 <img className="iconSize" src={Icon6} alt=""/>
                                 <h6 className="fw mt-3">KEYWORDS SPAMMING</h6>
                                 <small>
@@ -121,9 +135,21 @@ export default class Seo extends Component{
                             </div>
                         </div>
                     </div>
-                    <div className="col-1"></div>
                 </div>
 
+                <div className="row my-5 seo-cta">
+                    <div className="col-12 text-center ch">
+                        <h1 className="text-white fw lets-work">Let's Work Together!</h1>
+                        <p className="text-white">Your Business SEO Solutions to Drive Your Business Forward.</p>
+                        <button className="white-btn">Get a Quote Now</button>
+                        <div className="wave-image">
+                            <img src={bannerImg}   alt=""/>
+                        </div>
+                        <div id="seo-cta-pink">
+                            <img src={pink} alt=""/>
+                        </div>
+                    </div>
+                </div>
                 <div className="row my-5">
                     <div className="col-12 text-center">
                         <h2 className="text-center fw mt-5 ">Keep Your Expectations Higher from Your SEO Service Company in Pakistan</h2>
@@ -134,19 +160,7 @@ export default class Seo extends Component{
                     </div>
                     <div className="col-1"></div>
                 </div>
-                <div className="row my-5 seo-cta">
-                    <div className="col-12 text-center ch">
-                        <h1 className="text-white fw lets-work">Let's Work Together!</h1>
-                        <p className="text-white">Ut porttitor imperdiet hendrerit. Suspendisse pulvinar lacus nec sollicitudin finibus ligula <br/> quam bibendum dui, maximus ornare ex nulla ut lacus.</p>
-                        <button className="white-btn">Get In Touch!</button>
-                        <div className="wave-image">
-                            <img src={bannerImg}   alt=""/>
-                        </div>
-                        <div id="seo-cta-pink">
-                            <img src={pink} alt=""/>
-                        </div>
-                    </div>
-                </div>
+
                 <div className="row">
                         <div className="col-12 text-center">
                             <span id="b-seo">Before S.E.O </span>
@@ -191,7 +205,26 @@ export default class Seo extends Component{
                         </div>
                         <div className="col-1"></div>
                 </div>
-                <AnimatePopup/>
+                {/* <AnimatePopup/> */}
+                <div className="row my-5 ">
+                            <div className="col-12">
+                                <h2 className="text-center heading-page mb-5">FAQ's</h2> 
+                            </div>
+                            <div className="col-1"></div>
+                            <div className="col-10">
+                                <Accordion title="Why does SEO take time before I see the benefits?" desc="We have an online marketing team that is well-versed with a sales funnel of online marketing. They are a part of our team not only because of what they know, but the marketing results they produce overtime. For this reason, they get aligned with your overall marketing and business goals which are consistently monitored to drive maximum profit out of your online marketing budget."/>
+                                <br/>
+                                <Accordion title="How much time does it take to start seeing the results?" desc="<ul><li></li><li></li><li></li><li></li></ul>+"/>
+                                <br/>
+
+                                <Accordion title="Why are keywords important?" desc="Budget is not an issue at all as we have customised packages for different clients based on their marketing needs and business goals. So we are confident that we will definitely work it out for your organisation as well."/>
+                                <br/>
+                                <Accordion title="What other factors are important other than keywords?" desc="Nope. We have a strong link with companies that are based in other regions of Pakistan such as Islamabad, Lahore and Peshawar. With an internet in our hands, distance is no more an issue."/>
+                                <br/>
+                                
+                            </div>
+                            <div className="col-1"></div>
+                        </div>
                 <ContactForm/>
             </div>
         )

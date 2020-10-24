@@ -7,8 +7,8 @@ export default class HomepageBanner extends Component{
         return(
             <div> 
                 <div className="row bnr">
-                    <img id="banner-img" src={banner} alt=""/>
-                    <div className="heading-text">
+
+                    <div className="heading-text col-lg-6 col-xl-6 col-md-12 col-sm-12">
                         <h1 id="heading-main">Top-Geared <br/>Marketing</h1>
                         <p>ExpoBird is the powerhouse for companies and individuals that seek<br/>
                         best digital marketing and online marketing solutions.<br/>
@@ -18,7 +18,7 @@ export default class HomepageBanner extends Component{
                             Get Started
                         </button>
                     </div>
-                    <div className="main-video">
+                    <div className="main-video ">
                     <video  muted loop autoPlay>
                         <source src={Video} type="video/mp4"/>
                         Your browser does not support the video tag.

@@ -2,6 +2,28 @@ body{
 font-family: 'Lato', sans-serif;
 color: black;
 }
+
+.bnr{
+  background-image: url('./assets/expobird-banner-image.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:610px;
+}
+
+@media(max-width:1000px){
+
+
+.menu.navbar .nav {
+  display: none;
+}
+} 
+
+@media(min-width:1000px){
+  .menu.navbar .nav {
+    display: flex;
+  }
+  } 
 .navbar{
   background: #2E3192;
   color: white;
@@ -24,9 +46,7 @@ color: black;
 .call-icon{
   width: 16px;
 }
-.menu #logo{
-  margin-left: 6rem;
-}
+
 /* #call-icon-container{
   margin-right: 7rem;
 } */
@@ -145,7 +165,7 @@ color: black;
   position: absolute;
   visibility: hidden;
   opacity: 0;
-  width: max-content;
+  width: 900px;
   background-color: white;
   border-radius: 10px;;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -463,7 +483,7 @@ acronym{
 .testi-card{
   max-width: 520px;
   box-shadow: 0 2px 22px 8px rgba(56,125,255,.1);
-  padding: 96px 24px 30px;
+  padding: 57px 24px 30px;
   position: relative;
   border-radius: 10px;
 }
@@ -504,7 +524,7 @@ acronym{
   right: 0px;
 }
 .testi-margin{
-  margin-top: 8rem;
+  margin-top: 8rem !important;
 }
 .testi-margin2{
   margin-top: 5rem;
@@ -540,11 +560,12 @@ acronym{
   
 } */
 #diviCover #dC{
-  background : #4a42ec;
   max-width: 732px;
   border-radius: 10px;
   z-index: 233;
-
+  background: linear-gradient(120deg,#2E3390 0%,#513D8D 100%);
+  margin-top: 25px;
+  height: 373px ;
 }
 .play-btn{
   position: absolute;
@@ -595,26 +616,25 @@ acronym{
   font-size: 1.5rem;
 }
 .circle{
-  position: absolute;
-  /* position: relative; */
-  top: -18%;
-  right: -17%;
-  z-index: -1;
+    position: absolute;
+    top: -9%;
+    right: -2%;
+    z-index: -1;
+    opacity: 0.8;
 }
 .circle{
   width: 180px;
 }
 .image-container::after{
-  
+  margin-top: 25px;
   border-radius: 8px;
   content: "";
-  width: 104%;
-  height: 100%;
-  background-color: red;
+  width: 67%;
+  height: 95%;
   z-index: 1;
   position: absolute;
   top: 0;
-  right: -40px;
+  left: 16.5%;
   background: linear-gradient(120deg,#2E3390 0%,#513D8D 100%);
   opacity: 0.5;
 
@@ -649,7 +669,7 @@ button{
   color: white ;
 }
 .wave-image{
-  background-image: linear-gradient(to top, #2e338a, #134596);
+  background-image: linear-gradient(to top, #134596, #2e338a);
   position: absolute;
   bottom: 10%;
 }
@@ -657,7 +677,7 @@ button{
   
 } */
 .seo-banner{
-  background-image: linear-gradient(to top, #2e338a, #134596);
+  background-image: linear-gradient(to top, #134596, #2e338a);
 /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2e3192+16,2e3192+44,2e3192+76 */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#2e3192',GradientType=1 ); /* IE6-9 */
 height: 660px;
@@ -700,8 +720,8 @@ height: 660px;
 }
 #seo-pink{
   position: absolute;
-  top: -2%;
-  right: -5%;
+  top: 0%;
+  right: 0%;
 }
 #seo-pink img{
   width: 200px;
@@ -904,4 +924,92 @@ height: 660px;
 .videoSize {
   width: 514px;
   float: right;
+}
+.whatsapp-icon{
+  position: fixed;
+  left: 2%;
+  bottom: 12%;
+  z-index: 1;
+}
+.whatsapp-icon img{
+  width: 50px;
+  height: 50px;
+}
+.testimonial {
+  margin-top:  -145px;
+}
+.cta-image-right img{
+  float: right;
+  width: 420px;
+  height: 308px;
+}
+.heading-page-cta{
+
+    color: #2E3192;
+    font-weight: 900;
+    font-size: 3.5rem;
+    
+
+}
+.margin-left5 {
+  margin-left: 3rem !important;
+}
+@media (max-width: 575.98px) {
+.menu.navbar .nav {
+    display: none;
+}
+.heading-text {
+ top: 2rem;
+ left: 0rem; 
+ text-align: center;
+}
+.main-video{
+  top: 31rem;
+  right: 0.5pc;
+  height: 240px;
+}
+.heading-page {
+  margin-top: 20px;
+}
+#diviCover #dC {
+  max-width: 359px;
+}
+.image-container::after {
+  width: 94.3%;
+  height: 90%;
+  left: 3.5%;
+}
+.services-heading{
+  font-size:1.3rem;
+}
+.bg-white{
+  margin-left: 1rem!important;
+  margin-right: 1.5rem!important;
+}
+.slight-br {
+  width: 100%
+}
+.heading-page-cta{
+  margin-top: 20px;
+  font-size: 2.5rem;
+  text-align: center;
+  
+}
+.text-secondary{
+  text-align: center;
+}
+.layout-heading{
+  text-align: center;
+}
+.margin-left5 {
+  margin-left: 0rem !important;
+}
+
+}
+.marginTop{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.marginBottom{
+  margin-bottom: 2rem;
 }

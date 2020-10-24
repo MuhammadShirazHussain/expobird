@@ -12,7 +12,7 @@ export default class Footer extends Component{
 
     render(){
         return(
-            <div className="footer">
+            <div className="footer testi-margin2">
                 <div className="row text-center">
                   <div className="col-md-12 mt-5">
                     <h5>Join Renderforest newsletter and be among the first ones <br/> to receive our latest news and offers</h5>
