@@ -43,7 +43,8 @@
 }
   
   .margin-top {
-    margin-top: 113px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   .p-style {
     font-size: 1.1em;
@@ -64,7 +65,6 @@
     height: auto;
     line-height: 30px;
     border-radius: 10px;
-    max-width: 250px !important;
     margin: auto !important;
   }
   
@@ -376,4 +376,9 @@
   object-fit: contain;
   border: solid 1px #000000;
   border-radius: 36px;
+}
+.wake-up-image{
+    margin-left: 3.5rem;
+    border-radius: 22px;
+    box-shadow: rgba(0, 0, 0, 0.51) 0px 9px 16px 0px;
 }
