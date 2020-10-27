@@ -23,7 +23,7 @@ import graphicPortfolio from '../../assets/graphicPortfolio.png'
 import Modal from '../../components/modalVideo';
 import iccamulateDesign from '../../assets/iccamulate design.png'
 
-export default class GraphicDesign extends Component{
+export default class ContactUs extends Component{
     render(){
         return(
 

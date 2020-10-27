@@ -11,6 +11,7 @@ import Animation from './components/pages/Animation'
 import GraphicDesign from './components/pages/GraphicDesign'
 import ContactUs from './components/pages/Contact-Us'
 import AboutUs from './components/pages/About-Us'
+import CaseStudy from './components/pages/Case-Study'
 import Blog from './components/pages/Blog'
 import Footer from './components/Footer'
 import { BrowserRouter as Router, Switch,Route} from "react-router-dom";
@@ -29,6 +30,9 @@ export default class Main extends Component{
                         <Route path="/" exact>
                             <Homepage/>
                         </Route>
+                        <Router path="/case-study">
+                            <CaseStudy/>
+                        </Router>
                         <Route path="/digital-marketing" >
                             <DigitalMarketing/>
                         </Route>
@@ -62,6 +66,7 @@ export default class Main extends Component{
                         <Router path="/blog">
                             <Blog/>
                         </Router>
+
                         
                     </Switch>
                     <Footer/>
