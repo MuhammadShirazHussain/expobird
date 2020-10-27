@@ -21,9 +21,6 @@ import Portfolio1 from '../../assets/Social Media Portfolio-01.png'
 import Portfolio2 from '../../assets/Social Media Portfolio-02.png'
 import Portfolio3 from '../../assets/Social Media Portfolio-03.png'
 import Portfolio4 from '../../assets/Social Media Portfolio-04.png'
-<<<<<<< HEAD
-import image1 from '../../assets/Social Media Portfolio-04.png'
-=======
 import image1 from '../../assets/builders & developer.png'
 import image2 from '../../assets/clothing-and-fashion.png'
 import image3 from '../../assets/e-commerce-stores.png'
@@ -31,7 +28,6 @@ import image4 from '../../assets/mobile-brands-and-accessories.png'
 import image5 from '../../assets/restaurants-and-fast-food-chains.png'
 import image6 from '../../assets/small-and-medium-sized-enterprises.png'
 import reward from '../../assets/reward.png'
->>>>>>> f710db3d63ba0a8d44d77ce931e77d41aca0add7
 import Wakeup from '../../assets/Wake up.png'
 import facebook from '../../assets/facebook-icon.png'
 import whatsapp from '../../assets/whatsapp-icon.png'
