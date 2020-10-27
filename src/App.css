@@ -1116,7 +1116,6 @@ body{
   .footerIcons{
     filter: brightness(0) invert(1);
   }
-<<<<<<< HEAD
 .case-study-image{
   height: 430px;
   width: auto;
@@ -1130,7 +1129,6 @@ body{
   font-size: 8rem;
   color: white;
 }
-=======
 
 /* contact page */
   
@@ -1206,4 +1204,6 @@ body{
     outline: none;
     border-width: 0px 0px 0px 0px;
   }
->>>>>>> af8f43ca4b27d5ae403ceffd0b4d6465363edc7c
+.case-study-oxford{
+  background-image: linear-gradient(#4E4548, #A7A28F);
+}

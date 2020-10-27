@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
-import oxford from '../assets/oxford.png'
-import fbr from '../assets/fbr.png'
-import diamondHomes from '../assets/diamond homes.png'
-import memonBuilders from '../assets/memon builders.png'
-import customs from '../assets/customs.png'
-import apimatic from '../assets/apimatic.png'
-import clariant from '../assets/clariant.png'
-import hotwav from '../assets/hotwav.png'
-import superPower from '../assets/super power.png'
-import ronin from '../assets/ronin.png'
-import iba from '../assets/iba.png'
-import mehran from '../assets/mehran.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faPlay} from '@fortawesome/free-solid-svg-icons'
-import diviCover from '../assets/divi-video-cover.jpg'
-import greenCircle from '../assets/Green-01.svg'
-import Pentagon from '../assets/pentagon.svg'
+import oxford from '../assets/oxford.png';
+import fbr from '../assets/fbr.png';
+import diamondHomes from '../assets/diamond homes.png';
+import memonBuilders from '../assets/memon builders.png';
+import customs from '../assets/customs.png';
+import apimatic from '../assets/apimatic.png';
+import clariant from '../assets/clariant.png';
+import hotwav from '../assets/hotwav.png';
+import superPower from '../assets/super power.png';
+import ronin from '../assets/ronin.png';
+import iba from '../assets/iba.png';
+import mehran from '../assets/mehran.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faPlay} from '@fortawesome/free-solid-svg-icons';
+import diviCover from '../assets/divi-video-cover.jpg';
+import greenCircle from '../assets/Green-01.svg';
+import Pentagon from '../assets/pentagon.svg';
 
 
 export default class Clients extends Component{

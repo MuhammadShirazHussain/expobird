@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import CaseStudyBanner from '../../assets/casestudy.png'
+import oxford from '../../assets/oxford.png';
+import oxfordSweater from '../../assets/oxford-sweater.png';
 
 export default class CaseStudy extends Component{
     render(){
@@ -25,7 +27,16 @@ export default class CaseStudy extends Component{
                                     </h1>      
                         </div>
                         <div className="col-12 ">
-                                asdda
+                            <div className="row ">
+                                        <div className="col-6 case-study-oxford ">
+                                            <img className="marginTop3" src={oxford} height="40"/>
+                                            {/* <img className="marginTop3" src={oxfordSweater} height=""/> */}
+                                        </div>
+
+                                <div className="col-6">
+                                        
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
