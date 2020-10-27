@@ -52,14 +52,18 @@ body{
   /* #call-icon-container{
     margin-right: 7rem;
   } */
-  .heading-text{
+  /* .heading-text{
     position: absolute;
     top: 10pc;
     left: 10rem;
+  } */
+  .heading-text {
+    /* text-align: left; */
+    /* vertical-align: middle; */
   }
   .heading-text #heading-main{
     font-weight: 900;
-    font-size: 4.5rem;
+    font-size: 4rem;
     color: white;
   }
   
@@ -68,14 +72,14 @@ body{
     color: white;
   }
   .main-video{
-    position: absolute;
+    /* position: absolute;
     top: 10rem;
-    right: 8pc;
+    right: 8pc; */
     border-radius: 22px;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.51) 0px 9px 16px 0px;
   }
-  /* .heading-text */ .rf{
+ .rf{
     border-radius : 50px;
     appearance: none;
     outline: none;
@@ -85,12 +89,15 @@ body{
     font-size: 20px;
     padding: 10px 20px 10px 20px;
   }
+  .rf:focus{
+    outline: none;
+  }
   .heading-text .rf:hover {
     box-shadow: 0 3px 16px 0 rgba(243,124,108,.5);
     transition: ease-in-out .2s;
   }
   #sub-text{
-    font-size: 16px;
+    font-size: 1rem;
     opacity: 0.5;
   }
   #menu-icon{
@@ -830,7 +837,6 @@ body{
     font-weight: 900;
     font-size: 3.5rem !important; 
     color:white;
-    ;
   }
   .banner-one__video {
     width: 95px;
@@ -1059,7 +1065,7 @@ body{
   
 }
 .text-secondary{
-  text-align: center;
+  /* text-align: center; */
 }
 .layout-heading{
   text-align: center;
@@ -1110,6 +1116,7 @@ body{
   .footerIcons{
     filter: brightness(0) invert(1);
   }
+<<<<<<< HEAD
 .case-study-image{
   height: 430px;
   width: auto;
@@ -1123,3 +1130,80 @@ body{
   font-size: 8rem;
   color: white;
 }
+=======
+
+/* contact page */
+  
+  .contact_container{
+    background-color: #2e3192;
+  }
+  .contact-header1{
+    font-size: 1.5rem;
+    color: #ffffff;
+    letter-spacing: 10px;
+  }
+
+  .contact-header2{
+    font-size: 4.5rem;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+  }
+
+  .header-description{
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+
+  .Cards{
+    background-color: #ffffff;
+    border-radius: 2rem;
+    box-shadow: 0px 2px 70px 0px rgba(110,130,208,0.18);
+  }
+  .Cards h5{
+    font-weight: 700;
+    color: #2e3192;
+  }
+  .Cards p{
+    line-height: 1.8em;
+    color: #000000be;
+  }
+  .contactCard h2{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #2e3192;
+  }
+  .contactCard p{
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #000000be;
+  }
+  .inputBox{
+    line-height: 1.8em;
+    background-color: #f9fafd;
+    color: #000000be;
+    font-size: 1rem;
+    border-radius: 4px;
+    border-width: 0px 0px 3px 0px;
+    border-bottom-color: #bec2d8;
+  }
+  .inputBox:focus{
+    outline: none;
+    border-width: 0px 0px 0px 0px;
+  }
+
+  #textBox{
+    /* height: 150px; */
+    line-height: 1.8em;
+    background-color: #f9fafd;
+    color: #000000be;
+    font-size: 1rem;
+    border-radius: 4px;
+    border-width: 0px 0px 3px 0px;
+    border-bottom-color: #bec2d8;
+  }
+  #textBox:focus{
+    outline: none;
+    border-width: 0px 0px 0px 0px;
+  }
+>>>>>>> af8f43ca4b27d5ae403ceffd0b4d6465363edc7c

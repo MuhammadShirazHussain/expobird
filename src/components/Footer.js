@@ -21,7 +21,7 @@ export default class Footer extends Component{
         return(
             <div className="footer testi-margin2">
                 <div className="row text-center">
-                  <div className="col-md-12 mt-5">
+                  <div className="footerHeader col-md-12 mt-5">
                     <h5>Join ExpoBird newsletter and be among the first ones <br/> to receive our latest news and offers</h5>
                     <br/>
                     <h6 className="chimney">You can easily unsubscribe at any time.</h6>
@@ -67,11 +67,11 @@ export default class Footer extends Component{
                                 <img className="mr-3 footerIcons" width="50"src={contactLogo}></img>
                                     Contact
                             </li>
-                            <li>Please fill the <a href="#">Contact Form</a> from <a href="#">Contact Us </a>
+                            <li>Please fill the <a className= "text-reset" href="#">Contact Form</a> from <a className= "text-reset" href="#">Contact Us </a>
                                 page to facilitate yourself with our services.
                                 <br/>
                                 <p>OR <br/>Contact at 
-                                    <a href="tellto: +92-333-3375061"> +92-333-3375061
+                                    <a className= "ttext-reset" href="tellto: +92-333-3375061"> +92-333-3375061
                                     </a>
                                 </p>
                             </li>
@@ -83,11 +83,11 @@ export default class Footer extends Component{
                                 <img className="mr-3 footerIcons" width="50"src={mailLogo}></img>
                                     Email
                             </li>
-                            <li>  
-                                <a href="mailto: info@expobird.com">
+                            <li className="mt-2" >  
+                                <a className= "text-reset" href="mailto: info@expobird.com">
                                 info@expobird.com
                                 </a> 
-                                </li>
+                            </li>
                         </ul>
                     </div>
                     <div className="col-4">
@@ -96,7 +96,7 @@ export default class Footer extends Component{
                                 <img className="mr-2 footerIcons" width="70"src={agreementLogo}></img>
                                 Terms of Services
                             </li>
-                            <li>For Terms of services and Privacy Policy click <a href="#">here</a></li>
+                            <li>For Terms of services and Privacy Policy click <a className= "text-reset" href="#">here</a></li>
                         </ul>
                     </div>
                 </div>
