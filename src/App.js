@@ -1,6 +1,7 @@
 import React from 'react';
 import Main from './Main'
 import './App.css';
+import './Responsive.css';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 function App() {

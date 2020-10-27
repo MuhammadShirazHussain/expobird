@@ -52,14 +52,18 @@ body{
   /* #call-icon-container{
     margin-right: 7rem;
   } */
-  .heading-text{
+  /* .heading-text{
     position: absolute;
     top: 10pc;
     left: 10rem;
+  } */
+  .heading-text {
+    /* text-align: left; */
+    /* vertical-align: middle; */
   }
   .heading-text #heading-main{
     font-weight: 900;
-    font-size: 4.5rem;
+    font-size: 4rem;
     color: white;
   }
   
@@ -68,14 +72,14 @@ body{
     color: white;
   }
   .main-video{
-    position: absolute;
+    /* position: absolute;
     top: 10rem;
-    right: 8pc;
+    right: 8pc; */
     border-radius: 22px;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.51) 0px 9px 16px 0px;
   }
-  /* .heading-text */ .rf{
+ .rf{
     border-radius : 50px;
     appearance: none;
     outline: none;
@@ -85,12 +89,15 @@ body{
     font-size: 20px;
     padding: 10px 20px 10px 20px;
   }
+  .rf:focus{
+    outline: none;
+  }
   .heading-text .rf:hover {
     box-shadow: 0 3px 16px 0 rgba(243,124,108,.5);
     transition: ease-in-out .2s;
   }
   #sub-text{
-    font-size: 16px;
+    font-size: 1rem;
     opacity: 0.5;
   }
   #menu-icon{
@@ -830,7 +837,6 @@ body{
     font-weight: 900;
     font-size: 3.5rem !important; 
     color:white;
-    ;
   }
   .banner-one__video {
     width: 95px;
@@ -1059,7 +1065,7 @@ body{
   
 }
 .text-secondary{
-  text-align: center;
+  /* text-align: center; */
 }
 .layout-heading{
   text-align: center;

@@ -15,7 +15,7 @@ export default class ServicesTitle extends Component{
             <div className="row testi-margin ">
                     <div className="col-12 text-center my-5">
                         <h1 className="heading-page">{this.props.title}</h1>
-                        <h4>{this.props.SubHeading  } </h4>
+                        <h4 className="services-subheading">{this.props.SubHeading  } </h4>
                         
                         <h5 className="explore-services">{this.props.button}<FontAwesomeIcon icon={faArrowAltCircleRight}/></h5>
                     </div>

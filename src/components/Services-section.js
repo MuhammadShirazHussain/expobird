@@ -16,14 +16,14 @@ export default class Services extends Component{
             <div className="row ">
                     
                     <div className="col-md-1"></div>
-                    <div className="col-md-5 mb-5 bg-white mr-4">
+                    <div className="col-md-5 mb-5 bg-white mr-0 mr-sm-0 mr-md-4 mr-lg-4 mr-xl-4">
                         <div className="if">
                             <div className="services-video">
                                 <img src={this.props.image1} />
                             </div>
                             <div className="services-text ml-3">
                                 <h2 className="services-heading">{this.props.title1}</h2>
-                                <p className="text-secondary">{this.props.desc1}</p>
+                                <p className="text-left text-md-left text-lg-center text-sm-left">{this.props.desc1}</p>
                                 <div>
                                 <Link to={this.props.link1}>
                                     <button className="services">
@@ -42,7 +42,7 @@ export default class Services extends Component{
                             </div>
                             <div className="services-text ml-3">
                                 <h2 className="services-heading">{this.props.title2}</h2>
-                                <p className="text-secondary">{this.props.desc2}</p>
+                                <p className="text-left text-md-left text-lg-center text-sm-left">{this.props.desc2}</p>
                                 <div>
                                 <Link to={this.props.link2}>
                                     <button className="services">
