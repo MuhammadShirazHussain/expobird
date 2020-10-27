@@ -12,11 +12,14 @@ export default class Services extends Component{
 
     render(){
         return(
-
+            // <div className="container">
             <div className="row ">
-                    
                     <div className="col-md-1"></div>
+<<<<<<< HEAD
                     <div className="col-md-5 mb-5 bg-white mr-0 mr-sm-0 mr-md-4 mr-lg-4 mr-xl-4">
+=======
+                    <div className="col-md-5 mb-5 bg-white mr-4 ">
+>>>>>>> f710db3d63ba0a8d44d77ce931e77d41aca0add7
                         <div className="if">
                             <div className="services-video">
                                 <img src={this.props.image1} />
@@ -53,8 +56,8 @@ export default class Services extends Component{
                             </div>
                         </div>                     
                     </div>
+                    <div className="col-md-1"></div>
 
-                    <div className="col-md-1"></div> 
                     {/* <div className="col-md-5 mb-5 bg-white mr-4">
                         <div className="if">
                             <div className="services-video">
@@ -176,9 +179,9 @@ export default class Services extends Component{
                     </div>
                     <div className="col-md-1"></div> */}
  
+ </div>
 
-
-                </div>
+                // </div>
         );
     }
 }
