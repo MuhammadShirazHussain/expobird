@@ -9,6 +9,9 @@ import DigitalVideoCommercial from './components/digitalVideoCommercial'
 import WebDevelopment from './components/pages/WebDevelopment'
 import Animation from './components/pages/Animation'
 import GraphicDesign from './components/pages/GraphicDesign'
+import ContactUs from './components/pages/Contact-Us'
+import AboutUs from './components/pages/About-Us'
+import Blog from './components/pages/Blog'
 import Footer from './components/Footer'
 import { BrowserRouter as Router, Switch,Route} from "react-router-dom";
 
@@ -49,6 +52,15 @@ export default class Main extends Component{
                         </Router>
                         <Router path="/graphic-design">
                             <GraphicDesign/>
+                        </Router>
+                        <Router path="/contact-us">
+                            <ContactUs/>
+                        </Router>
+                        <Router path="/about-us">
+                            <AboutUs/>
+                        </Router>
+                        <Router path="/blog">
+                            <Blog/>
                         </Router>
                         
                     </Switch>

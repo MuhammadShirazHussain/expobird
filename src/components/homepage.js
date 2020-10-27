@@ -116,7 +116,7 @@ export default class Main extends Component{
                         /> */}
         
                         
-                        <div className="row my-5 ">
+                        <div className="row testi-margin ">
                             <div className="col-12">
                                 <h2 className="text-center heading-page mb-5">FAQ's</h2> 
                             </div>
